@@ -1,0 +1,55 @@
+export default {
+  async fetch(request, env, ctx) {
+    const html = `<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>হিলফুল ফুযুল ইসলামী যুব সংগঠন</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f8f2;color:#173c2b}
+header{background:#075c3b;color:white;text-align:center;padding:35px 15px}
+h1{margin:10px 0}
+main{max-width:850px;margin:20px auto;padding:15px}
+section{background:white;margin:15px 0;padding:22px;border-radius:14px;box-shadow:0 3px 12px #0001}
+h2{color:#087346;border-bottom:2px solid #d7eadb;padding-bottom:10px}
+footer{text-align:center;background:#075c3b;color:white;padding:20px}
+a{color:#087346}
+</style>
+</head>
+<body>
+<header>
+<h1>🕌 হিলফুল ফুযুল ইসলামী যুব সংগঠন</h1>
+<p>ঐক্য • সততা • মানবকল্যাণ</p>
+</header>
+<main>
+<section id="about">
+<h2>আমাদের পরিচিতি</h2>
+<p>হিলফুল ফুযুল ইসলামী যুব সংগঠন একটি ইসলামী মূল্যবোধভিত্তিক সংগঠন। ঐক্য, নৈতিকতা, মানবকল্যাণ ও সমাজসেবামূলক কাজ আমাদের লক্ষ্য।</p>
+</section>
+<section id="members">
+<h2>সদস্যবৃন্দ</h2>
+<p>সংগঠনের সদস্য ও দায়িত্বশীল ব্যক্তিদের তালিকা এখানে প্রকাশ করা হবে।</p>
+</section>
+<section id="activities">
+<h2>আমাদের কার্যক্রম</h2>
+<p>সামাজিক উদ্যোগ, স্বেচ্ছাসেবা ও মানবকল্যাণমূলক কার্যক্রম।</p>
+</section>
+<section id="contact">
+<h2>যোগাযোগ</h2>
+<p><b>ঠিকানা:</b> কুসুমপুর (পূর্বপাড়া), বুড়িচং, কুমিল্লা</p>
+<p><b>প্রতিষ্ঠাতা:</b> ইছুফ মাহমুদ</p>
+<p><a href="https://www.facebook.com/eusuf.mahmud.er" target="_blank">Facebook Profile</a></p>
+</section>
+</main>
+<footer>© ২০২৬ হিলফুল ফুযুল ইসলামী যুব সংগঠন</footer>
+</body>
+</html>`;
+    return new Response(html, {
+      headers: {
+        "content-type": "text/html; charset=UTF-8"
+      }
+    });
+  }
+};
